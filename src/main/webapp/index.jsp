@@ -1,14 +1,12 @@
 <html>
 <head>
-<title>Welcome to Devops</title>
+<title>Welcome to Deepaks profile</title>
 </head>
 <body>
-	<h1>Please select the following sections!</h1>
-	<h2>1.Linux commands</h2>
-	<h2>2.shell scripting</h2>
-	<h2>3.Tomcat apache</h2>
-	<h2>4.Maven</h2>
-	<h2>5.Jenkins</h2>
+	<h1>Please find the below information</h1>
+	<h2>1.Full name - DEEPAK DEV M</h2>
+	<h2>2. Brach- Civil Engineering</h2>
+	<h2>3.Place of birth - Mysore</h2>
 	<p>
 		It is now
 		<%= new java.util.Date() %></p>
