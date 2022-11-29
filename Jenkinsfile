@@ -1,14 +1,14 @@
 pipeline {
-  agent { label 'build_server' }
+  agent {label 'build2'}
   stages {
-    stage('mybuild') {
+    stage ('my build') {
       steps {
-        sh 'mvn package'
-        sh 'ls'
+        sh 'mvn package'    
       }
     }
-    stage('mydeploy') {
-      steps {
+stage ('my deploy') {
+   agent {label 'build_server'}
+   steps {
         sh 'sudo cp -R target/hello-world-war-1.0.0.war /opt/apache-tomcat-10.0.27/webapps/'
         sh 'sudo sh /opt/apache-tomcat-10.0.27/bin/shutdown.sh'
         sh 'sleep 2'
