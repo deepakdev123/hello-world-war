@@ -5,7 +5,7 @@
 <body>
 	<h1>Please find the below information</h1>
 	<h2>1.Full name - Deeepak DEV M</h2>
-	<h2>2. Brach- Civil Engineering</h2>
+	<h2>2. Brach- Civil</h2>
 	<h2>3.Place of birth - Mysore</h2>
 	<p>
 		It is now
