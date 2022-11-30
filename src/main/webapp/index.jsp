@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Welcome to Deepaks profile</title>
+<title>Welcome to Deepaks profile section</title>
 </head>
 <body>
 	<h1>Please find the below information</h1>
