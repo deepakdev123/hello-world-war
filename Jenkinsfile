@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh 'mvn package'
         sh 'ls'
-        sh 'sh scp -R target/hello-world-war-1.0.0.war root@172.31.15.200:/opt/tomcat/webapps'
+        sh 'sh scp -R /home/jenkins/workspace/first_declarative/target/hello-world-war-1.0.0.war root@172.31.15.200:/opt/tomcat/webapps'
       }
     }
     stage('mydeploy') {
