@@ -4,7 +4,7 @@ pipeline {
     stage ('Build') {
       agent { label 'build_server' }
       steps {
-        sh "echo ${BUILD_VERSION}"
+        sh "echo ${BUILD_NUMBER}"
         sh 'mvn deploy'
         sh 'pwd'
       }
