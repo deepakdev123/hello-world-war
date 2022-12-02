@@ -4,7 +4,7 @@ pipeline {
     stage ('Build') {
       agent { label 'build2' }
       steps {
-        sh "echo ${BUILD_NUMBER}"
+        sh "echo ${BUILD_VERSION}"
         sh 'mvn deploy'
         sh 'pwd'
       }
@@ -14,8 +14,8 @@ pipeline {
       steps {
         sh 'pwd'
         sh 'whoami'
-        sh 'curl -u mysurudev@gmail.com:Hankoo@891 -O https://deepakdev123.jfrog.io/artifactory/libs-release-local/com/efsavage/hello-world-war/${BUILD_NUMBER}/hello-world-war-${BUILD_NUMBER}.war'
-        sh 'sudo cp -R hello-world-war-${BUILD_NUMBER}.war /opt/apache-tomcat-10.0.27/webapps/'
+        sh 'curl -u mysurudev@gmail.com:Hankoo@891 -O https://deepakdev123.jfrog.io/artifactory/libs-release-local/com/efsavage/hello-world-war/${BUILD_VERSION}/hello-world-war-${BUILD_VERSION}.war'
+        sh 'sudo cp -R hello-world-war-${BUILD_VERSION}.war /opt/apache-tomcat-10.0.27/webapps/'
         sh 'sudo sh /opt/apache-tomcat-10.0.27/bin/shutdown.sh'
         sh 'sleep 3'
         sh 'sudo sh /opt/apache-tomcat-10.0.27/bin/startup.sh'
