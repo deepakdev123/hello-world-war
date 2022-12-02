@@ -2,7 +2,7 @@ pipeline {
   agent none
   stages {
     stage ('Build') {
-      agent { label 'build2' }
+      agent { label 'build_server' }
       steps {
         sh "echo ${BUILD_VERSION}"
         sh 'mvn deploy'
@@ -10,7 +10,7 @@ pipeline {
       }
     }
     stage ('Deploy') {
-      agent { label 'build_server' }
+      agent { label 'build2' }
       steps {
         sh 'pwd'
         sh 'whoami'
