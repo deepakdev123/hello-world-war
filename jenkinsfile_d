@@ -25,3 +25,5 @@ pipeline {
         }    
     } 
 }
+
+#tomcat_deploy is image name instead of container id in line 22
