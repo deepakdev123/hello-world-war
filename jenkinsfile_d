@@ -19,8 +19,8 @@ pipeline {
         agent {label 'build2'} 
             steps {
                sh 'docker pull deepakdev123/tomcat_deploy:${BUILD_VERSION}'
-               sh 'docker rm -f tomcat_deploy'
-               sh 'docker run -d -p 8888:8080 --name tomcat_deploy deepakdev123/tomcat_deploy:${BUILD_VERSION}'
+               sh 'docker rm -f my_tomcat'
+               sh 'docker run -d -p 8888:8080 --name my_tomcat deepakdev123/tomcat_deploy:${BUILD_VERSION}'
             }
         }    
     } 
