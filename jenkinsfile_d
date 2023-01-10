@@ -21,7 +21,7 @@ pipeline {
             steps {
                sh 'docker pull deepakdev123/tomcat_deploy:${BUILD_VERSION}'
                sh 'docker rm -f my_tomcat'
-               sh 'docker run -d -p 8888:8080 --name my_tomcat deepakdev123/tomcat_deploy:${BUILD_VERSION}'
+               sh 'docker run -d -p 8888:8080 --name my_tomcat -e BUILD_VERSION=1.2.3 deepakdev123/tomcat_deploy:${BUILD_VERSION}'
             }
         }    
     } 
