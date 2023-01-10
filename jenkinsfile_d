@@ -26,6 +26,6 @@ pipeline {
         }    
     } 
 }
-
-# Dockerhub in withCredentials block is Id given while adding credentials in jenkins and in line 23 my_tomcat is container name
-
+/*
+ Dockerhub in withCredentials block is Id given while adding credentials in jenkins and in line 23 my_tomcat is container name
+*/
