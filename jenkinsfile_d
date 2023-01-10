@@ -10,9 +10,10 @@ pipeline {
         stage('publish stage') {
             steps {
                 sh "echo ${BUILD_VERSION}"
-                sh 'docker login -u deepakdev123 -p Hankoo@891'
+                withCredentials([usernamePassword(credentialsId: 'Dockerhub', passwordVariable: 'DockerhubPassword', usernameVariable: 'DockerhubUser')]) {
                 sh 'docker tag tomcat_build:${BUILD_VERSION} deepakdev123/tomcat_deploy:${BUILD_VERSION}'
                 sh 'docker push deepakdev123/tomcat_deploy:${BUILD_VERSION}'
+                }
             }
         } 
         stage( 'my deploy' ) {
