@@ -1,0 +1,12 @@
+selector_matchlabels: tomcat
+deployment_name: tomcat
+replicas: 2
+registry_name: deepakdev123
+docker_repo_name: tomcat_deploy
+image_tag: 5.5.5
+port_name: tomcat
+target_port: 8080
+port: 8080
+favorite:
+  drink: coffee
+  food: pizza
