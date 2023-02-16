@@ -4,7 +4,7 @@
 </head>
 <body>
 	<h1>Please find the below information</h1>
-	<h2>1.Full name - Deepak Dev M</h2>
+	<h2>1.Full name - Deepak Dev M deeepak</h2>
 	<h2>2. Branch- CIVIL ENGINEERING</h2>
 	<h2>3.Place of birth - Mysore</h2>
 	<h2>3.College - SJCE Mysore</h2>
